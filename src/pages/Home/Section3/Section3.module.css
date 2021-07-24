@@ -1,10 +1,35 @@
 .Section {
 	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+
+.Grouped1 {
+	width: 100%;
 	height: 600px;
 	background-color: #fddae0;
-	margin-bottom: 2rem;
 	display: flex;
 	flex-direction: row;
+}
+
+.Grouped2 {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	margin: 3rem 0;
+}
+
+.InternalC {
+	width: 970px;
+	height: 100%;
+	background-color: #d8d8d8;
+	display: flex;
+	justify-content: center;
+    flex-direction: column;
+	border: 1px solid #726969;
 }
 
 .Left {
@@ -58,14 +83,14 @@
 	width: 275px;
 	background-color: #fff;
 	margin: 2rem 0;
-    border-radius: 16px;
+	border-radius: 16px;
 }
 
 .Images {
 	height: 50%;
 	display: flex;
 	justify-content: center;
-    padding: 1rem;
+	padding: 1rem;
 }
 
 .Images img {
@@ -77,6 +102,6 @@
 	/* height: 50%; */
 	display: flex;
 	flex-direction: column;
-    justify-content: center;
-    padding: 0 2rem;
+	justify-content: center;
+	padding: 0 2rem;
 }

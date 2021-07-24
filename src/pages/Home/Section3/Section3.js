@@ -39,41 +39,49 @@ class Section3 extends Component {
 		}
 		return (
 			<div className={styles.Section}>
-				<div className={styles.Left}>
-					<img src={girls} alt="girls" />
-					<div className={styles.Texted}>
-						<span
-							style={{
-								fontSize: "36px",
-								fontWeight: "bold",
-								fontFamily: "Open Sans",
-								marginBottom: "2rem",
-							}}
-						>
-							Looking for product that are just simply perfect for
-							you?
-						</span>
-						<span
-							style={{
-								fontSize: "24px",
-								fontWeight: "bold",
-								fontFamily: "Open Sans",
-								marginBottom: "2rem",
-							}}
-						>
-							Here are some product that we believe match your
-							skin, hair, and body! HAve we mentioned that they
-							solved your concerns too?
-						</span>
-						<div className={styles.Bottom}>
-							<button>See My Matches</button>
+				<div className={styles.Grouped1}>
+					<div className={styles.Left}>
+						<img src={girls} alt="girls" />
+						<div className={styles.Texted}>
+							<span
+								style={{
+									fontSize: "36px",
+									fontWeight: "bold",
+									fontFamily: "Open Sans",
+									marginBottom: "2rem",
+								}}
+							>
+								Looking for product that are just simply perfect
+								for you?
+							</span>
+							<span
+								style={{
+									fontSize: "24px",
+									fontWeight: "bold",
+									fontFamily: "Open Sans",
+									marginBottom: "2rem",
+								}}
+							>
+								Here are some product that we believe match your
+								skin, hair, and body! HAve we mentioned that
+								they solved your concerns too?
+							</span>
+							<div className={styles.Bottom}>
+								<button>See My Matches</button>
+							</div>
 						</div>
 					</div>
+					<div className={styles.Center}>
+						<div className={styles.Inner}>{Cards}</div>{" "}
+					</div>
+					<div className={styles.Right}></div>
 				</div>
-				<div className={styles.Center}>
-					<div className={styles.Inner}>{Cards}</div>{" "}
+				<div className={styles.Grouped2}>
+					<div className={styles.InternalC}>
+						<span>Horizontal 970x250</span>
+						<span>(Internal Campaign Only)</span>
+					</div>
 				</div>
-				<div className={styles.Right}></div>
 			</div>
 		);
 	}

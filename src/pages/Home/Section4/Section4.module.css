@@ -1,0 +1,71 @@
+.Section {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 2rem;
+}
+
+.Wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 12rem;
+}
+
+.Wrapper h1 {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: unset;
+}
+.Wrapper h2 {
+	font-weight: normal;
+	font-size: 20px;
+	color: #a6a6a6;
+	width: 80%;
+}
+.Texted {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.Grouped {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 50px 50px;
+	margin-top: 2rem;
+}
+
+.GridItem {
+	display: flex;
+	flex-direction: column;
+	width: 408px;
+	height: 321px;
+}
+
+.ImgOnly {
+	width: 100%;
+	height: 70%;
+	border-radius: 30px;
+}
+
+.ImgOnly img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 30px;
+}
+.TextOnly {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 0;
+}
+
+.Icon {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+}
+
+.Icon svg {
+	color: #b65068 !important;
+}
