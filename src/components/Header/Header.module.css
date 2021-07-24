@@ -1,0 +1,111 @@
+.Header {
+	width: 100%;
+	height: 10vh;
+	margin-top: 2rem;
+}
+
+.Wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	border-bottom: 2px solid #f1f1f1;
+	border-top: 2px solid #f1f1f1;
+}
+
+.Wrapper div:first-child {
+	width: 5%;
+	height: 100%;
+	padding: 0 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.Wrapper div:first-child svg {
+	width: 40%;
+	height: 100%;
+	color: #4c4c4c;
+}
+
+.Wrapper div:nth-child(2) {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.Wrapper div:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.Wrapper div:nth-child(3) {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 0 2rem;
+}
+
+.Wrapper div:nth-child(3) .Card {
+	position: relative;
+	flex-direction: row;
+	width: 100%;
+	height: 65%;
+	border: 1px solid #d8d8d8;
+	border-radius: 12px;
+	margin: auto;
+}
+
+.Wrapper div:nth-child(3) input {
+	width: 90%;
+	height: 85%;
+	border-style: unset;
+	margin: auto;
+	position: relative;
+    font-size: 24px;
+	font-family: "Helvetica";
+    outline: none;
+}
+
+.Wrapper div:nth-child(3) .Icon {
+	width: 10%;
+	height: 65%;
+	margin: auto 0;
+	padding: unset;
+}
+
+
+
+.Wrapper div:nth-child(4) {
+	background-color: #dc2950;
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.Wrapper div:nth-child(4) .Login {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	padding: 0 2rem;
+}
+
+.Wrapper div:nth-child(4) .Login svg {
+	width: 10%;
+	height: auto;
+	color: #f1f1f1;
+	margin: 0 0.5rem;
+}
+
+.Wrapper div:nth-child(4) .Login span {
+	font-size: 24px;
+	font-family: "Helvetica";
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	text-align: center;
+	color: #f1f1f1;
+}
