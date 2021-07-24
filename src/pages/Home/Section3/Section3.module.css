@@ -1,0 +1,82 @@
+.Section {
+	width: 100%;
+	height: 600px;
+	background-color: #fddae0;
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.Left {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.Right {
+	width: 5%;
+	height: 100%;
+}
+
+.Texted {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.Bottom {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.Bottom button {
+	width: 55%;
+	background-color: #d82a4f;
+	border-radius: 10px;
+	height: 50px;
+	font-size: 18px;
+	color: #fff;
+	font-family: "Open Sans";
+	border-style: unset;
+	border-width: unset;
+}
+
+.Center {
+	width: 55%;
+	height: 100%;
+}
+
+.Inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 100%;
+}
+.Cards {
+	width: 275px;
+	background-color: #fff;
+	margin: 2rem 0;
+    border-radius: 16px;
+}
+
+.Images {
+	height: 50%;
+	display: flex;
+	justify-content: center;
+    padding: 1rem;
+}
+
+.Images img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.CardsBtm {
+	/* height: 50%; */
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}

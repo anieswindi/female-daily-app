@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 
 import Section1 from "./Section1/Section1";
 import Section2 from "./Section2/Section2";
+import Section3 from "./Section3/Section3";
 
 class Home extends Component {
 	constructor(props) {
@@ -15,6 +16,7 @@ class Home extends Component {
 				<Header />
 				<Section1 />
 				<Section2 />
+				<Section3 />
 			</div>
 		);
 	}
