@@ -1,0 +1,45 @@
+.Section {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.ContentA {
+	display: flex;
+	justify-content: center;
+	padding: 1rem 2rem;
+    border-bottom: 3px solid #f1f1f1;
+}
+.TextTitle {
+	padding: 1rem;
+}
+.TextTitle span {
+	color: black;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "Open Sans";
+	text-align: center;
+}
+
+.ContentB {
+	width: 100%;
+	height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.TopBrand {
+	width: 970px;
+	height: 50px;
+	background-color: #d8d8d8;
+    border: 4px solid #cfcfcf;
+}
+
+.Billboard {
+	width: 970px;
+	height: 250px;
+	background-color: #d8d8d8;
+    border: 4px solid #cfcfcf;
+}
