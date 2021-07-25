@@ -1,7 +1,7 @@
 .Section {
 	width: 100%;
 	height: 100%;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 }
 
 .Wrapper {
@@ -38,37 +38,39 @@
 }
 .Grouped {
 	width: 100%;
-	height: 540px;
+	height: 100%;
 	display: flex;
 	flex-direction: row;
-    margin-top: 2rem;
+	margin-top: 2rem;
+	justify-content: space-between;
+	margin-bottom: 2rem;
 }
 
-.Grid1 {
-	width: 60%;
+.Item {
+	width: 225px;
+	height: 150px;
+}
+
+.Item img {
+	width: 100%;
 	height: 100%;
+	object-fit: contain;
 }
 
-.Grid1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.Grid2 {
-	width: 40%;
+.Contents {
+	width: 100%;
 	height: 100%;
-    margin-left: 2rem;
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
-.Box {
-    width: 100%;
-    height: 50%;
+.TextTitle {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 1rem;
 }
 
-.Box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.TextContent {
+	color: black;
+	font-size: 24px;
 }

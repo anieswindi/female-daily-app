@@ -42,6 +42,7 @@
 	display: flex;
 	flex-direction: row;
     margin-top: 2rem;
+    justify-content: space-between;
 }
 
 .Grid1 {
@@ -71,4 +72,32 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+.Cards {
+	width: 275px;
+	background-color: #fff;
+	margin: 2rem 0;
+	border-radius: 16px;
+}
+
+.Images {
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.Images img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.CardsBtm {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 2rem;
 }

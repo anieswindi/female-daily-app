@@ -8,6 +8,9 @@ import Section4 from "./Section4/Section4";
 import Section5 from "./Section5/Section5";
 import Section6 from "./Section6/Section6";
 import Section7 from "./Section7/Section7";
+import Section8 from "./Section8/Section8";
+import Section9 from "./Section9/Section9";
+import Footer from "../../components/Footer/Footer";
 
 class Home extends Component {
 	constructor(props) {
@@ -25,6 +28,9 @@ class Home extends Component {
 				<Section5 />
 				<Section6 />
 				<Section7 />
+				<Section8 />
+				<Section9 />
+				<Footer />
 			</div>
 		);
 	}
