@@ -13,6 +13,7 @@
 }
 .TextTitle {
 	padding: 1rem;
+	cursor: pointer;
 }
 .TextTitle span {
 	color: black;

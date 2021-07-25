@@ -20,7 +20,12 @@
 	font-weight: normal;
 	font-size: 20px;
 	color: #a6a6a6;
-	width: 80%;
+	width: 50%;
+}
+
+.None {
+	width: 30%;
+	height: 100%;
 }
 .Texted {
 	width: 100%;
@@ -30,10 +35,34 @@
 .Grouped {
 	width: 100%;
 	height: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 2rem;
+}
+
+.Grouped1 {
+	width: 70%;
+	height: 100%;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-gap: 50px 50px;
-    margin-top: 2rem;
+}
+
+.Grouped2 {
+	width: 30%;
+	height: 100%;
+	justify-content: center;
+    display: flex;
+}
+
+.Mr2 {
+	width: 300px;
+	height: 250px;
+	background-color: #d8d8d8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #726969;
 }
 
 .GridItem {
@@ -54,15 +83,15 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-    margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 .Avatar span {
 	font-size: 18px;
 	color: black;
 	font-family: "Open Sans";
-    margin: auto;
-    text-align: center;
+	margin: auto;
+	text-align: center;
 }
 
 .ImgOnly {
@@ -123,8 +152,6 @@
 
 .TextedContent {
 	overflow: hidden;
-	/* white-space: nowrap; */
-	/* text-overflow: ellipsis; */
 	width: 100%;
 }
 

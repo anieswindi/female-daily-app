@@ -1,0 +1,112 @@
+.Section {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 2rem;
+}
+
+.Wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 12rem;
+}
+
+.Wrapper h1 {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: unset;
+}
+.Wrapper h2 {
+	font-weight: normal;
+	font-size: 20px;
+	color: #a6a6a6;
+	width: 80%;
+}
+.Texted {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.Grouped {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: row;
+	/* grid-gap: 50px 50px; */
+	margin-top: 2rem;
+	justify-content: space-between;
+}
+
+.GridItem {
+	display: flex;
+	flex-direction: column;
+	width: 335px;
+	height: 100%;
+	border-radius: 15px;
+	border: 2px solid #f3f1f1;
+	box-shadow: -7px 8px 15px #e8dede;
+}
+
+.Icon {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+}
+
+.Icon svg {
+	color: #b65068 !important;
+}
+
+.Grid1 {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.Grid2 {
+	width: 100%;
+	height: 20%;
+	display: flex;
+    justify-content: center;
+}
+
+.Grid3 {
+	width: 100%;
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+.Grid3 .Div1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 1rem 0;
+}
+.Grid3 .Div2 {
+	justify-content: center;
+    display: flex;
+	color: black;
+	font-size: 20px;
+}
+
+
+.ImgOnly {
+	width: 75%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.ImgOnly img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	border-radius: 50%;
+}
+
+.Grid2 span {
+	color: black;
+	font-size: 28px;
+	font-weight: bold;
+	margin: auto;
+}

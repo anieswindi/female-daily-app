@@ -58,11 +58,11 @@ class Section5 extends Component {
 						</div>
 					</div>
 					<div className={styles.Avatar}>
-							<div className={styles.ImgOnly}>
-								<img src={avatar} alt="avatars" />
-							</div>
-							<span>Anies Windiarti</span>
-							<span>Developer</span>
+						<div className={styles.ImgOnly}>
+							<img src={avatar} alt="avatars" />
+						</div>
+						<span>Anies Windiarti</span>
+						<span>Developer</span>
 					</div>
 				</div>
 			);
@@ -97,8 +97,17 @@ class Section5 extends Component {
 								<FontAwesomeIcon icon={faChevronRight} />
 							</div>
 						</div>
+						<div className={styles.None}></div>
 					</div>
-					<div className={styles.Grouped}>{Cards}</div>
+					<div className={styles.Grouped}>
+						<div className={styles.Grouped1}>{Cards}</div>
+						<div className={styles.Grouped2}>
+							<div className={styles.Mr2}>
+								Mr2
+								300x250
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		);
