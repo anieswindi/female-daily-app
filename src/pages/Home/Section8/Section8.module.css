@@ -112,7 +112,7 @@
 	color: #d82a4f;
 }
 
-@media screen and (min-width: 1366px) and (max-width: 1439px) {
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
 	.Wrapper {
 		padding: 2rem 6rem;
 	}

@@ -109,7 +109,7 @@
 	margin: auto;
 }
 
-@media screen and (min-width: 1366px) and (max-width: 1439px) {
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
 	.Wrapper {
 		padding: 2rem 6rem;
 		height: 578px;

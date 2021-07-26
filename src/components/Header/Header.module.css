@@ -108,7 +108,7 @@
 	color: #f1f1f1;
 }
 
-@media screen and (min-width: 1366px) and (max-width: 1439px) {
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
 	.Wrapper div:nth-child(4) .Login span {
 		font-size: 18px;
 	}
