@@ -3,27 +3,52 @@ import styles from "./Section4.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import article_img from "../../../assets/article_img.png";
+import api from "../../../api/api";
 
 class Section4 extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			Articles: [],
+		};
+		this.getInfo = this.getInfo.bind(this);
+	}
+
+	componentDidMount() {
+		this.getInfo();
+	}
+	getInfo() {
+		const apies = new api();
+		apies
+			.getInfo()
+			.then((res) => {
+				this.setState({ Articles: res.data["latest articles"] });
+			})
+			.catch((error) => {
+				console.log("error =>",error);
+			});
+	}
 	render() {
-		const Cards = [];
-		for (let i = 0; i <= 5; i++) {
-			Cards.push(
-				<div className={styles.GridItem} key={`card-articles-${i}`}>
+		const Cards = this.state.Articles.map((article, index) => {
+
+			//article.image get error
+			return (
+				<div className={styles.GridItem} key={`card-articles-${index}`}>
 					<div className={styles.ImgOnly}>
-						<img src={article_img} alt="articles_img" />
+						<img src={article_img} alt="article" />
 					</div>
 					<div className={styles.TextOnly}>
 						<span className={styles.SubContent}>
-							9 Best face oils for sensitive skin
+							{article.title}
 						</span>
 						<span className={styles.TextedMini}>
-							Username | &nbsp; 2 hours ago
+							{article.author} | &nbsp; {article.published_at}
 						</span>
 					</div>
 				</div>
 			);
-		}
+		});
+
 		return (
 			<div className={styles.Section}>
 				<div className={styles.Wrapper}>

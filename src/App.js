@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-//import pages
+
 import Login from "./pages/Login/Login";
 import Home from "./pages/Home/Home";
 
