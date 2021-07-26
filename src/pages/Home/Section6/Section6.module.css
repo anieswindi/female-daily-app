@@ -1,7 +1,6 @@
 .Section {
 	width: 100%;
 	height: 100%;
-	margin-bottom: 2rem;
 }
 
 .Wrapper {
@@ -67,7 +66,7 @@
 	width: 100%;
 	height: 20%;
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 
 .Grid3 {
@@ -85,11 +84,10 @@
 }
 .Grid3 .Div2 {
 	justify-content: center;
-    display: flex;
+	display: flex;
 	color: black;
 	font-size: 20px;
 }
-
 
 .ImgOnly {
 	width: 75%;
@@ -109,4 +107,30 @@
 	font-size: 28px;
 	font-weight: bold;
 	margin: auto;
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+	.Wrapper {
+		padding: 2rem 6rem;
+		height: 578px;
+	}
+
+	.Grouped {
+		height: 432px;
+	}
+	.Grid1 {
+		height: 40%;
+	}
+	.GridItem {
+		width: 250px;
+	}
+
+	.Grid2 span {
+		font-size: 20px;
+	}
+
+	.Grid3 .Div2 {
+		font-size: 16px;
+		padding: 1rem;
+	}
 }

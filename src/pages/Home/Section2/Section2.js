@@ -15,7 +15,7 @@ class Section2 extends Component {
 							<img src={example_product} alt="example" />
 						</div>
 						<div className={styles.TextedBottom}>
-							<span style={{ fontSize: "24px" }}>
+							<span >
 								JUICE BEAUTY
 							</span>
 							<span>Pito pigments</span>

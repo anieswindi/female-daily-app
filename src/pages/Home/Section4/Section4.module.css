@@ -69,3 +69,35 @@
 .Icon svg {
 	color: #b65068 !important;
 }
+
+.SubContent {
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "Open Sans";
+	margin-bottom: 1rem;
+}
+
+.TextedMini {
+	color: #7d7d7d;
+	font-size: 18px;
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+	.Wrapper {
+		padding: 2rem 6rem;
+	}
+
+	.GridItem {
+		width: 320px;
+		height: 269px;
+	}
+
+	.SubContent,
+	.TitleProduct {
+		font-size: 18px;
+	}
+
+	.TextedMini {
+		font-size: 16px;
+	}
+}

@@ -1,7 +1,6 @@
 .Section {
 	width: 100%;
 	height: 100%;
-	margin-bottom: 2rem;
 }
 
 .Wrapper {
@@ -41,7 +40,7 @@
 	height: 540px;
 	display: flex;
 	flex-direction: row;
-    margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 .Grid1 {
@@ -50,25 +49,36 @@
 }
 
 .Grid1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .Grid2 {
 	width: 40%;
 	height: 100%;
-    margin-left: 2rem;
-    display: flex;
-    flex-direction: column;
+	margin-left: 2rem;
+	display: flex;
+	flex-direction: column;
 }
 
 .Box {
-    width: 100%;
-    height: 50%;
+	width: 100%;
+	height: 50%;
 }
 
 .Box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+	.Wrapper {
+		padding: 2rem 6rem;
+	}
+
+	.Grouped {
+		height: 394px;
+	}
+	
 }

@@ -121,3 +121,28 @@
 	border: 1px solid #726969;
 	background-color: #d8d8d8;
 }
+
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+	.Wrap2 {
+		padding-right: 6rem;
+	}
+
+	.Wrap1 {
+		padding-left: 6rem;
+	}
+
+	.Wrapper {
+		height: 272px;
+	}
+
+	.Box,
+	.Childs1,
+	.Child2 span {
+		font-size: 18px;
+	}
+
+	.Childs2 svg {
+		width: 40px;
+		height: 40px;
+	}
+}

@@ -16,25 +16,13 @@ class Section8 extends Component {
 						<img src={i % 2 === 0 ? puff : review} alt="puff" />
 					</div>
 					<div className={styles.CardsBtm}>
-						<span
-							style={{
-								color: "#d82a4f",
-								fontSize: "24px",
-								fontWeight: "bold",
-							}}
-						>
+						<span className={styles.TitleProduct}>
 							Match Skin Type
 						</span>
-						<span
-							style={{
-								color: "black",
-								fontSize: "24px",
-								fontWeight: "bold",
-							}}
-						>
+						<span className={styles.SubContent}>
 							VAL BY VALERIE THOMAS
 						</span>
-						<span>Pure Pressed Blush</span>
+						<span className={styles.TextMini}>Pure Pressed Blush</span>
 					</div>
 				</div>
 			);

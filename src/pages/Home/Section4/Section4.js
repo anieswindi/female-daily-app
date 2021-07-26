@@ -14,21 +14,10 @@ class Section4 extends Component {
 						<img src={article_img} alt="articles_img" />
 					</div>
 					<div className={styles.TextOnly}>
-						<span
-							style={{
-								color: "black",
-								fontSize: "24px",
-								fontWeight: "bold",
-							}}
-						>
+						<span className={styles.SubContent}>
 							9 Best face oils for sensitive skin
 						</span>
-						<span
-							style={{
-								color: "#7d7d7d",
-								fontSize: "18px",
-							}}
-						>
+						<span className={styles.TextedMini}>
 							Username | &nbsp; 2 hours ago
 						</span>
 					</div>
@@ -54,9 +43,9 @@ class Section4 extends Component {
 									display: "flex",
 									justifyContent: "center",
 									margin: "auto",
-                                    color : "#b65068",
-                                    fontSize : "24px",
-                                    fontFamily : "Open Sans"
+									color: "#b65068",
+									fontSize: "24px",
+									fontFamily: "Open Sans",
 								}}
 							>
 								See more

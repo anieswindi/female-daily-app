@@ -21,13 +21,7 @@ class Section5 extends Component {
 								justifyContent: "center",
 							}}
 						>
-							<span
-								style={{
-									color: "black",
-									fontSize: "20px",
-									fontWeight: "bold",
-								}}
-							>
+							<span className={styles.SubContent}>
 								VAL BY VALERIE THOMAS
 							</span>
 							<span>CE Ferulic</span>
@@ -102,10 +96,7 @@ class Section5 extends Component {
 					<div className={styles.Grouped}>
 						<div className={styles.Grouped1}>{Cards}</div>
 						<div className={styles.Grouped2}>
-							<div className={styles.Mr2}>
-								Mr2
-								300x250
-							</div>
+							<div className={styles.Mr2}>Mr2 300x250</div>
 						</div>
 					</div>
 				</div>

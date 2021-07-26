@@ -64,9 +64,9 @@
 	border-style: unset;
 	margin: auto;
 	position: relative;
-    font-size: 24px;
+	font-size: 24px;
 	font-family: "Helvetica";
-    outline: none;
+	outline: none;
 }
 
 .Wrapper div:nth-child(3) .Icon {
@@ -75,8 +75,6 @@
 	margin: auto 0;
 	padding: unset;
 }
-
-
 
 .Wrapper div:nth-child(4) {
 	background-color: #dc2950;
@@ -108,4 +106,14 @@
 	margin: auto;
 	text-align: center;
 	color: #f1f1f1;
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+	.Wrapper div:nth-child(4) .Login span {
+		font-size: 18px;
+	}
+
+	.Wrapper div:nth-child(3) input {
+		font-size: 16px;
+	}
 }
