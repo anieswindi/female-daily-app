@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styles from "./Section2.module.css";
-import example_product from "../../../assets/example_product.png";
 import avatar from "../../../assets/avatar.png";
 import api from "../../../api/api";
 
@@ -29,7 +28,6 @@ class Section2 extends Component {
 	}
 	render() {
 		const Cards = this.state.Editors.map((editor, index) => {
-			console.log(editor);
 			return (
 				<div className={styles.Grouped} key={`grouped-for-${index}`}>
 					<div className={styles.Card}>

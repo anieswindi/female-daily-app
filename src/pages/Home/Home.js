@@ -13,10 +13,6 @@ import Section9 from "./Section9/Section9";
 import Footer from "../../components/Footer/Footer";
 
 class Home extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
 	render() {
 		return (
 			<div>

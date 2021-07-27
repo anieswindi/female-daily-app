@@ -47,7 +47,7 @@ function Footer(props) {
 		},
 	];
 
-	console.log("footer")
+
 	return (
 		<div className={styles.Footer}>
 			<div className={styles.Wrapper}>
