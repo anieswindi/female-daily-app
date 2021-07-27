@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import styles from "./Section3.module.css";
 import girls from "../../../assets/girls.png";
 import puff from "../../../assets/puff.png";
+import ReactStars from "react-rating-stars-component";
+
 
 class Section3 extends Component {
 	render() {
@@ -17,6 +19,16 @@ class Section3 extends Component {
 						<span className={styles.TitleProduct}>
 							Match Skin Type
 						</span>
+						<div className={styles.Group}>
+							<span className={styles.Rating}>4.9</span>
+							<ReactStars
+								size={27}
+								value={4.9}
+								edit={false}
+								activeColor="#dc4f6d"
+								color="#cfcfcf"
+							/>
+						</div>
 						<span
 							className={styles.SubContent}
 							style={{ fontWeight: "bold" }}
@@ -55,8 +67,8 @@ class Section3 extends Component {
 				</div>
 				<div className={styles.Grouped2}>
 					<div className={styles.InternalC}>
-						<span>Horizontal 970x250</span>
-						<span>(Internal Campaign Only)</span>
+						<span className={styles.TextFrame}>Horizontal 970x250</span>
+						<span className={styles.TextFrame}>(Internal Campaign Only)</span>
 					</div>
 				</div>
 			</div>

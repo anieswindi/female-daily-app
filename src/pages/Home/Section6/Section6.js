@@ -8,16 +8,36 @@ import {
 	faCommentAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import popular_avatar from "../../../assets/popular_avatar.png";
+import embrace from "../../../assets/embrace.png";
+import embrace2 from "../../../assets/embrace2.png";
+import embrace3 from "../../../assets/embrace3.png"
 
 class Section6 extends Component {
 	render() {
 		const Cards = [];
 		for (let i = 0; i <= 3; i++) {
+			let img;
+			switch (i) {
+				case 0:
+					img = popular_avatar;
+					break;
+				case 1:
+					img = embrace;
+					break;
+				case 2:
+					img = embrace2;
+					break;
+				case 3:
+					img = embrace3;
+					break;
+				default:
+			}
+
 			Cards.push(
 				<div className={styles.GridItem} key={`card-articles-${i}`}>
 					<div className={styles.Grid1}>
 						<div className={styles.ImgOnly}>
-							<img src={popular_avatar} alt="popular_ava" />
+							<img src={img} alt="popular_ava" />
 						</div>
 					</div>
 					<div className={styles.Grid2}>

@@ -26,6 +26,13 @@
 	width: 30%;
 	height: 100%;
 }
+
+.TextFrame {
+	margin:auto;
+	font-size: 30px;
+	font-weight: bold;
+	color: #606060;
+}
 .Texted {
 	width: 100%;
 	display: flex;
@@ -133,6 +140,7 @@
 	flex-direction: row;
 	height: 35%;
 	padding: 1rem 2rem;
+	border-bottom: 1px solid #d6d6d6;
 }
 
 .Top img {
@@ -145,6 +153,12 @@
 	display: flex;
 	flex-direction: row;
 	height: 30%;
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+
+.Stars {
+	width: 70%;
 }
 
 .Bottom {
@@ -180,6 +194,7 @@
 	background-color: #b65068;
 }
 
+
 @media screen and (min-width: 1366px) and (max-width: 1600px) {
 	.Wrapper {
 		padding: 2rem 6rem;
@@ -200,5 +215,9 @@
 
 	.Avatar span {
 		font-size: 16px;
+	}
+
+	.Stars {
+		width: 50%;
 	}
 }

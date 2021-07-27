@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import styles from "./Section8.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import review from "../../../assets/reviews.png";
 import puff from "../../../assets/puff.png";
+import ReactStars from "react-rating-stars-component";
 
 class Section8 extends Component {
 	render() {
@@ -16,13 +15,22 @@ class Section8 extends Component {
 						<img src={i % 2 === 0 ? puff : review} alt="puff" />
 					</div>
 					<div className={styles.CardsBtm}>
-						<span className={styles.TitleProduct}>
-							Match Skin Type
-						</span>
+						<div className={styles.Group}>
+							<span className={styles.Rating}>4.9</span>
+							<ReactStars
+								size={30}
+								value={4.9}
+								edit={false}
+								activeColor="#dc4f6d"
+								color="#cfcfcf"
+							/>
+						</div>
 						<span className={styles.SubContent}>
 							VAL BY VALERIE THOMAS
 						</span>
-						<span className={styles.TextMini}>Pure Pressed Blush</span>
+						<span className={styles.TextMini}>
+							Pure Pressed Blush
+						</span>
 					</div>
 				</div>
 			);
@@ -50,12 +58,8 @@ class Section8 extends Component {
 									fontSize: "24px",
 									fontFamily: "Open Sans",
 								}}
-							>
-								{/* See more */}
-							</span>
-							<div className={styles.Icon}>
-								{/* <FontAwesomeIcon icon={faChevronRight} /> */}
-							</div>
+							></span>
+							<div className={styles.Icon}></div>
 						</div>
 					</div>
 					<div className={styles.Grouped}>{Cards}</div>

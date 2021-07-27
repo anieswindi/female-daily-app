@@ -59,12 +59,12 @@ class Section1 extends Component {
 				</div>
 				<div className={styles.ContentB}>
 					<div className={styles.TopBrand}>
-						<span>Top Frame 970x50</span>
+						<span className={styles.TextFrame}>Top Frame 970x50</span>
 					</div>
 				</div>
 				<div className={styles.ContentB}>
 					<div className={styles.Billboard}>
-						<span>Billboard 970x250</span>
+						<span className={styles.TextFrame}>Billboard 970x250</span>
 					</div>
 				</div>
 			</div>

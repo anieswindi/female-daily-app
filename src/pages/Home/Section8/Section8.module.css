@@ -9,6 +9,18 @@
 	padding: 2rem 12rem;
 }
 
+.Group {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1rem;
+}
+
+.Rating {
+	margin: auto 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
 .Wrapper h1 {
 	font-weight: bold;
 	font-size: 2em;
@@ -104,12 +116,7 @@
 	font-size: 24px;
 	font-weight: bold;
 	font-family: "Open Sans";
-}
-
-.TitleProduct {
-	font-size: 24px;
-	font-weight: bold;
-	color: #d82a4f;
+	margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1600px) {
@@ -121,7 +128,7 @@
 		height: 410px;
 	}
 
-	.TitleProduct, .SubContent {
+	.SubContent {
 		font-size: 18px;
 	}
 

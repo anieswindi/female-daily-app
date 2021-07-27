@@ -1,16 +1,14 @@
 import React, { Component } from "react";
 import styles from "./Section5.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faChevronRight,
-	faChevronLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import avatar from "../../../assets/avatar.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { connect } from "react-redux";
 import { getInfo } from "../../../actions/infoAction";
+import ReactStars from "react-rating-stars-component";
 
 const mapStateToProps = (state) => {
 	return {
@@ -69,7 +67,16 @@ class Section5 extends Component {
 							<hr />
 							<div className={styles.Bottom}>
 								<div className={styles.BottomOne}>
-									{review.star} || &nbsp;
+									<div className={styles.Stars}>
+										<ReactStars
+											size={30}
+											value={4.9}
+											edit={false}
+											activeColor="#dc4f6d"
+											color="#cfcfcf"
+										/>
+									</div>
+
 									<span>2 hours ago</span>
 								</div>
 								<div className={styles.TextedContent}>
@@ -138,7 +145,11 @@ class Section5 extends Component {
 							<Slider {...settings}>{Cards}</Slider>
 						</div>
 						<div className={styles.Grouped2}>
-							<div className={styles.Mr2}>Mr2 300x250</div>
+							<div className={styles.Mr2}>
+								<span className={styles.TextFrame}>
+									Mr2 300x250
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>

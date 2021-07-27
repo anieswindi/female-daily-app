@@ -12,42 +12,6 @@ import {
 } from "react-share";
 
 function Footer(props) {
-	const Contents = [
-		{
-			id: 0,
-			title: "About Us",
-		},
-		{
-			id: 1,
-			title: "Terms and Condition",
-		},
-		{
-			id: 2,
-			title: "Awards",
-		},
-		{
-			id: 3,
-			title: "Feedback",
-		},
-		{
-			id: 4,
-			title: "Privacy and Policy",
-		},
-		{
-			id: 5,
-			title: "Newsletter",
-		},
-		{
-			id: 6,
-			title: "Contact",
-		},
-		{
-			id: 7,
-			title: "Help",
-		},
-	];
-
-
 	return (
 		<div className={styles.Footer}>
 			<div className={styles.Wrapper}>
@@ -102,7 +66,9 @@ function Footer(props) {
 
 			<div className={styles.BottomFrame}>
 				<div className={styles.Frame}>
-					<span>Bottom frame 970x50</span>
+					<span className={styles.TextFrame}>
+						Bottom frame 970x50
+					</span>
 				</div>
 			</div>
 		</div>

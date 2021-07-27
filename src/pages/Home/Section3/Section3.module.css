@@ -102,7 +102,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 0 2rem;
+	padding: 0 1rem;
 }
 
 .Title {
@@ -116,27 +116,48 @@
 	font-size: 24px;
 	font-weight: bold;
 	font-family: "Open Sans";
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 .TitleProduct {
 	font-size: 24px;
 	font-weight: bold;
 	color: #d82a4f;
+	margin-bottom: 0.5rem;
 }
 
+.Group {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1rem;
+}
+
+.Rating {
+	margin: auto 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.TextFrame {
+	margin: 0 auto;
+	font-size: 30px;
+	font-weight: bold;
+	color: #606060;
+}
 @media screen and (min-width: 1366px) and (max-width: 1600px) {
 	.Grouped1 {
 		height: 478px;
 	}
-	
+
 	.Cards {
 		width: 200px;
 	}
 
-	.SubContent,
 	.TitleProduct {
 		font-size: 18px;
+	}
+
+	.SubContent {
+		font-size: 16px;
 	}
 
 	.Title {
