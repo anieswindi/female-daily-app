@@ -31,7 +31,13 @@ npm start
    <img src="https://files.fm/thumb_show.php?i=hj7zzd39j" alt="login"/>
  </p>
 
-3. You can Log In and Log Out this webpage.
+### Testing
+
+Testing app use this command :
+
+```
+npm test
+```
 
 ### Deployment
 
@@ -47,3 +53,7 @@ npm start
 
 -   **Anies Windiarti** - _Initial work_ - [Github](https://github.com/anieswindi)
 -   **Anies Windiarti**-_LinkedIn_-[LinkedIn](https://www.linkedin.com/in/anies-windiarti/)
+
+```
+
+```
