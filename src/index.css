@@ -14,3 +14,9 @@ code {
 
 /*global styles*/
 
+.slick-slider {
+	height: 100%;
+}
+.slick-list {
+	height: 100%;
+}

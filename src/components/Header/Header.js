@@ -7,8 +7,14 @@ import {
 	faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/logo.png";
+import * as users from "../../actions/usersAction";
+import { Redirect } from "react-router-dom";
 
 function Header(props) {
+	const logout = () => {
+		users.logout();
+		window.location.assign("/login");
+	};
 	return (
 		<div className={styles.Header}>
 			<div className={styles.Wrapper}>
@@ -31,9 +37,9 @@ function Header(props) {
 					</div>
 				</div>
 				<div>
-					<div className={styles.Login}>
+					<div className={styles.Login} onClick={logout}>
 						<FontAwesomeIcon icon={faUserCircle} />
-						<span>LOGIN / SIGNUP</span>
+						<span>LOG OUT</span>
 					</div>
 				</div>
 			</div>

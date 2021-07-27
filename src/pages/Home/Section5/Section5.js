@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import styles from "./Section5.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import review_product from "../../../assets/review_product.png";
+import {
+	faChevronRight,
+	faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
 import avatar from "../../../assets/avatar.png";
 import api from "../../../api/api";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 class Section5 extends Component {
 	constructor(props) {
@@ -30,6 +35,22 @@ class Section5 extends Component {
 			});
 	}
 	render() {
+		const settings = {
+			dots: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			infinite: false,
+			appendDots: (dots) => (
+				<div
+					style={{
+						backgroundColor: "transparent",
+						borderRadius: "10px",
+					}}
+				>
+					<ul style={{ margin: "0px", padding : "unset" }}> {dots} </ul>
+				</div>
+			),
+		};
 		const Cards = this.state.Reviews.map((review, index) => {
 			return (
 				<div className={styles.GridItem} key={`reviews-from-${index}`}>
@@ -52,7 +73,7 @@ class Section5 extends Component {
 					<hr />
 					<div className={styles.Bottom}>
 						<div className={styles.BottomOne}>
-							{review.star}
+							{review.star} || &nbsp;
 							<span>2 hours ago</span>
 						</div>
 						<div className={styles.TextedContent}>
@@ -105,7 +126,9 @@ class Section5 extends Component {
 						<div className={styles.None}></div>
 					</div>
 					<div className={styles.Grouped}>
-						<div className={styles.Grouped1}>{Cards}</div>
+						<div className={styles.Grouped1}>
+							<Slider {...settings}>{Cards}</Slider>
+						</div>
 						<div className={styles.Grouped2}>
 							<div className={styles.Mr2}>Mr2 300x250</div>
 						</div>

@@ -37,14 +37,19 @@
 	display: flex;
 	flex-direction: row;
 	margin-top: 2rem;
+	position: relative;
 }
 
 .Grouped1 {
 	width: 70%;
 	height: 100%;
-	display: grid;
+	/* display: grid;
 	grid-template-columns: auto auto auto;
-	grid-gap: 50px 50px;
+	grid-gap: 50px 50px; */
+}
+
+.Grouped1 svg {
+	display: block;
 }
 
 .Grouped2 {
@@ -65,9 +70,9 @@
 }
 
 .GridItem {
-	display: flex;
+	display: flex !important;
 	flex-direction: column;
-	width: 467px;
+	width: 467px !important;
 	height: 321px;
 	border-radius: 15px;
 	border: 2px solid #d5d5d5;
@@ -169,14 +174,21 @@
 	margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 1366px) and (max-width: 1439px) {
+.Example {
+	width: 150px;
+	height: 100px;
+	background-color: #b65068;
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
 	.Wrapper {
 		padding: 2rem 6rem;
+		height: 541px;
 	}
 
 	.GridItem {
-		width: 346px;
-		height: 271px;
+		width: 346px !important;
+		height: 271px !important;
 	}
 
 	.ImgOnly {
