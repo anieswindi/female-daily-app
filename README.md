@@ -40,7 +40,7 @@ npm start
 -   Please reload page if you get `Application Error` there.
 
  <p align="center">
-   <img src="https://files.fm/f/9aytvaw2e" alt="app_error"/>
+   <img src="https://files.fm/thumb_show.php?i=9aytvaw2e" alt="app_error"/>
  </p>
 
 ## Authors & Developer
