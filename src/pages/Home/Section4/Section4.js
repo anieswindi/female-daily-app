@@ -3,51 +3,56 @@ import styles from "./Section4.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import article_img from "../../../assets/article_img.png";
-import api from "../../../api/api";
+import { getInfo } from "../../../actions/infoAction";
+import { connect } from "react-redux";
+
+const mapStateToProps = (state) => {
+	return {
+		Articles: state.info.Articles,
+	};
+};
 
 class Section4 extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			Articles: [],
-		};
-		this.getInfo = this.getInfo.bind(this);
-	}
-
 	componentDidMount() {
-		this.getInfo();
+		this.props.dispatch(getInfo());
 	}
-	getInfo() {
-		const apies = new api();
-		apies
-			.getInfo()
-			.then((res) => {
-				this.setState({ Articles: res.data["latest articles"] });
-			})
-			.catch((error) => {
-				console.log("error =>",error);
-			});
-	}
-	render() {
-		const Cards = this.state.Articles.map((article, index) => {
 
-			//article.image get error
-			return (
-				<div className={styles.GridItem} key={`card-articles-${index}`}>
-					<div className={styles.ImgOnly}>
-						<img src={article_img} alt="article" />
-					</div>
-					<div className={styles.TextOnly}>
-						<span className={styles.SubContent}>
-							{article.title}
-						</span>
-						<span className={styles.TextedMini}>
-							{article.author} | &nbsp; {article.published_at}
-						</span>
-					</div>
+	render() {
+		const Cards =
+			this.props.Articles !== null ? (
+				this.props.Articles.map((article, index) => {
+					return (
+						<div
+							className={styles.GridItem}
+							key={`card-articles-${index}`}
+						>
+							<div className={styles.ImgOnly}>
+								<img src={article_img} alt="article" />
+							</div>
+							<div className={styles.TextOnly}>
+								<span className={styles.SubContent}>
+									{article.title}
+								</span>
+								<span className={styles.TextedMini}>
+									{article.author} | &nbsp;{" "}
+									{article.published_at}
+								</span>
+							</div>
+						</div>
+					);
+				})
+			) : (
+				<div
+					style={{
+						width: "100%",
+						height: "100%",
+						display: "flex",
+						justifyContent: "center",
+					}}
+				>
+					<h4>No data of Latest Articles</h4>
 				</div>
 			);
-		});
 
 		return (
 			<div className={styles.Section}>
@@ -87,4 +92,4 @@ class Section4 extends Component {
 	}
 }
 
-export default Section4;
+export default connect(mapStateToProps)(Section4);

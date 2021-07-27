@@ -1,63 +1,71 @@
 import React, { Component } from "react";
 import styles from "./Section2.module.css";
 import avatar from "../../../assets/avatar.png";
-import api from "../../../api/api";
+import { connect } from "react-redux";
+import { getInfo } from "../../../actions/infoAction";
+
+const mapStateToProps = (state) => {
+	return {
+		Editors: state.info.Editors,
+	};
+};
 
 class Section2 extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			Editors: [],
-		};
-		this.getInfo = this.getInfo.bind(this);
-	}
-
 	componentDidMount() {
-		this.getInfo();
-	}
-	getInfo() {
-		const apies = new api();
-		apies
-			.getInfo()
-			.then((res) => {
-				this.setState({ Editors: res.data["editor's choice"] });
-			})
-			.catch((error) => {
-				console.log(error);
-			});
+		this.props.dispatch(getInfo());
 	}
 	render() {
-		const Cards = this.state.Editors.map((editor, index) => {
-			return (
-				<div className={styles.Grouped} key={`grouped-for-${index}`}>
-					<div className={styles.Card}>
-						<div className={styles.CardA}>
-							<img src={editor.product.image} alt="example" />
-						</div>
-						<div className={styles.TextedBottom}>
-							<span>{editor.product.name}</span>
-							<span>{editor.description}</span>
-							<span>Rosy Beige</span>
-						</div>
-						<div className={styles.CardAbsolute}>
-							<div className={styles.Styles}>
-								<div className={styles.Avatar}>
-									<img src={avatar} alt="avatar" />
+		const Cards =
+			this.props.Editors !== null ? (
+				this.props.Editors.map((editor, index) => {
+					return (
+						<div
+							className={styles.Grouped}
+							key={`grouped-for-${index}`}
+						>
+							<div className={styles.Card}>
+								<div className={styles.CardA}>
+									<img
+										src={editor.product.image}
+										alt="example"
+									/>
 								</div>
-								<div className={styles.Texted}>
-									<span className={styles.EditorText}>
-										{editor.editor}
-									</span>
-									<span className={styles.EditorJob}>
-										{editor.role}
-									</span>
+								<div className={styles.TextedBottom}>
+									<span>{editor.product.name}</span>
+									<span>{editor.description}</span>
+									<span>Rosy Beige</span>
+								</div>
+								<div className={styles.CardAbsolute}>
+									<div className={styles.Styles}>
+										<div className={styles.Avatar}>
+											<img src={avatar} alt="avatar" />
+										</div>
+										<div className={styles.Texted}>
+											<span className={styles.EditorText}>
+												{editor.editor}
+											</span>
+											<span className={styles.EditorJob}>
+												{editor.role}
+											</span>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					);
+				})
+			) : (
+				<div
+					style={{
+						width: "100%",
+						height: "100%",
+						display: "flex",
+						justifyContent: "center",
+					}}
+				>
+					<h4>No data of Editor's Choice</h4>
 				</div>
 			);
-		});
 
 		return (
 			<div className={styles.Section}>
@@ -71,4 +79,4 @@ class Section2 extends Component {
 	}
 }
 
-export default Section2;
+export default connect(mapStateToProps, null)(Section2);

@@ -19,8 +19,9 @@ const users = (state = initialState, action) => {
 		case "DELETE_USER":
 			localStorage.removeItem("users");
 			return state;
+		default:
+			return state;
 	}
-	return state;
 };
 
 export default users;
