@@ -4,15 +4,27 @@ Female Daily App
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
+1. Clone Repo
 ```bash
-npm install
+git clone -b master https://github.com/anieswindi/female-daily-app.git
+```
+
+2. Use the node package manager to install this.
+```
+npm install 
+```
+
+3. React start scripts
+```
+npm start
 ```
 
 ## Usage
 
-![alt tag](https://drive.google.com/file/d/1P-d2v_YY6qMQlE3mC6M75hZBeQboDzHU/view?usp=sharing)
+1. Please insert anything for username and password in this form.
+![](https://files.fm/thumb_show.php?i=hj7zzd39j)
+
+2. You can Log In and Log Out this webpage.
 
 ### Deployment
 
