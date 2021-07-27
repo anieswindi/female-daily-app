@@ -17,7 +17,7 @@ const Login = () => {
 				password: password,
 			};
 			users.setUser(user);
-			window.location.assign("/")
+			window.location.assign("/");
 		} else {
 			setError(true);
 		}
@@ -25,7 +25,7 @@ const Login = () => {
 	return (
 		<div className={styles.Login}>
 			<div className={styles.Wrapper}>
-				<form onSubmit={(e) => submitLogin(e)}>
+				<form onSubmit={(e) => submitLogin(e)} data-testid="login-form">
 					<div className={styles.Div}>
 						<div className={styles.Top}>
 							<div className={styles.Logs}>

@@ -31,14 +31,6 @@ npm start
    <img src="https://files.fm/thumb_show.php?i=hj7zzd39j" alt="login"/>
  </p>
 
-### Testing
-
-Testing app use this command :
-
-```
-npm test
-```
-
 ### Deployment
 
 -   This web has moved here: [https://female-daily-app.herokuapp.com/login].
@@ -53,5 +45,3 @@ npm test
 
 -   **Anies Windiarti** - _Initial work_ - [Github](https://github.com/anieswindi)
 -   **Anies Windiarti**-_LinkedIn_-[LinkedIn](https://www.linkedin.com/in/anies-windiarti/)
-
-
