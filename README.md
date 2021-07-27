@@ -2,7 +2,7 @@
 
 Female Daily App
 
-## Installation
+### Installation
 
 1. Clone Repo
 
@@ -22,9 +22,9 @@ npm install
 npm start
 ```
 
-## Usage
+### Usage
 
-1. Make sure your ``LocalStorage`` has been clear.
+1. Make sure your `LocalStorage` has been clear.
 
 2. You can insert anything for username and password in this form.
  <p align="center">
@@ -35,10 +35,15 @@ npm start
 
 ### Deployment
 
-This web has moved here: [https://female-daily-app.herokuapp.com/login].
+-   This web has moved here: [https://female-daily-app.herokuapp.com/login].
 
-Please reload page if you get `Application Error` there.
+-   Please reload page if you get `Application Error` there.
+
+ <p align="center">
+   <img src="https://files.fm/f/9aytvaw2e" alt="app_error"/>
+ </p>
 
 ## Authors & Developer
 
 -   **Anies Windiarti** - _Initial work_ - [Github](https://github.com/anieswindi)
+-   **Anies Windiarti**-_LinkedIn_-[LinkedIn](https://www.linkedin.com/in/anies-windiarti/)
